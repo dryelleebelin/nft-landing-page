@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end lg:items-center">
         <Image
           src={sonic}
-          className="w-full max-w-8/10 md:max-w-lg object-contain"
+          className="w-full max-w-8/10 md:max-w-md object-contain"
           quality={100}
           priority
           alt="Imagem do Sonic"

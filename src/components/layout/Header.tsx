@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import logo from "../../../public/favicon.png";
+import type { SectionItem } from "@/types/sections";
 
 export default function Header() {
-  const sections = [
+  const sections: SectionItem[] = [
     { id: "home", label: "Início" },
     { id: "featured", label: "Destaques" },
     { id: "discover", label: "Explorar" },
@@ -17,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <header className="backdrop-blur-md border-b border-white/10 sticky top-0 h-auto py-6 px-6 md:px-40 flex justify-between items-center">
+    <header className="backdrop-blur-md border-b border-white/10 sticky top-0 h-auto py-6 px-6 md:px-40 flex justify-between items-center z-50">
       <Image
         src={logo}
         className="w-20 object-contain"
