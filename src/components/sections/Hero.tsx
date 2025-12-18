@@ -1,1 +1,52 @@
-//Título principal + CTA
+"use client";
+
+import Image from "next/image";
+import sonic from "../../assets/images/sonic.png";
+
+export default function Hero() {
+  return (
+    <section className="bg-slate-900 flex flex-col-reverse md:flex-row items-center h-auto md:h-8/10 py-8 md:py-0 gap-4 md:gap-0">
+      <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end lg:items-center">
+        <Image
+          src={sonic}
+          className="w-full max-w-8/10 md:max-w-lg object-contain"
+          quality={100}
+          priority
+          alt="Imagem do Sonic"
+        />
+      </div>
+
+      <div className="w-full md:w-3/5 px-6 md:pr-40 flex flex-col text-center md:text-end justify-center gap-4">
+        <h2 className="text-2xl md:text-5xl text-sky-500 font-semibold">
+          Crie Seus Próprios NFTs.
+        </h2>
+
+        <h1 className="text-3xl md:text-6xl font-bold">
+          Descubra, Colecione e Venda Eles.
+        </h1>
+
+        <p className="md:pl-20">
+          Nossa plataforma exclusiva de NFTs permite que criadores utilizem dispositivos abertos e seguros. O maior centro comercial avançado do mundo para colecionáveis cripto e tokens não fungíveis.
+        </p>
+
+        <div className="flex flex-col md:flex-row justify-center md:justify-end gap-4 mt-6 items-center">
+          <button
+            type="button"
+            className="w-auto bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 rounded-full w-auto py-2 px-6 font-semibold flex items-center justify-center hover:text-slate-100 hover:from-sky-400 hover:via-blue-700 duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer"
+          >
+            Começar Agora
+          </button>
+
+          <button
+            type="button"
+            className="w-auto relative inline-flex items-center justify-center rounded-full p-[2px] bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+          >
+            <span className="rounded-full bg-slate-950 px-6 py-2 font-semibold hover:text-slate-100 duration-300">
+              Saiba Mais
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
