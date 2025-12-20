@@ -27,13 +27,13 @@ export default function Hero() {
         <Image
           src={blobSolid}
           alt="Blob solid"
-          className="pointer-events-none absolute bottom-10 right-14 hidden md:block w-34 opacity-40"
+          className="pointer-events-none absolute -top-40 right-34 hidden md:block w-64 opacity-50"
         />
 
         <Image
           src={blobSolid}
           alt="Blob solid"
-          className="pointer-events-none absolute -top-40 right-34 hidden md:block w-64 opacity-50"
+          className="pointer-events-none absolute bottom-12 right-16 hidden md:block w-34 opacity-40"
         />
       </div>
 
