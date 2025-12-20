@@ -1,3 +1,7 @@
+<div align="center">
+  <img alt="Logo" src="https://nft-landing-ui.vercel.app/favicon.png" width="200" />
+</div>
+
 # NFT Marketplace – Landing Page
 
 Landing page moderna para um marketplace de NFTs, desenvolvida com **Next.js**, focada em performance, design responsivo e boas práticas de front-end.
@@ -5,7 +9,7 @@ Landing page moderna para um marketplace de NFTs, desenvolvida com **Next.js**, 
 > 🚧 Em desenvolvimento — novas seções e animações estão sendo implementadas.
 
 ## 🔗 Preview
-Em breve
+🌐 O site está publicado online com **deploy automático configurado via Vercel**: [Acesse aqui](https://nft-landing-ui.vercel.app/)
 
 ## 🛠️ Tecnologias
 

@@ -5,3 +5,13 @@
 @theme {
   --font-inter: "Inter", sans-serif; 
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #0f172a;
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #cbd5e1;
+  border-radius: 50px;
+}

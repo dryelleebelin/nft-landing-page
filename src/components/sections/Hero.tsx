@@ -2,21 +2,52 @@
 
 import Image from "next/image";
 import sonic from "../../assets/images/sonic.png";
+import blobOutline from "../../assets/images/blob-outline.svg";
+import blobSolid from "../../assets/images/blob-solid.svg";
 
 export default function Hero() {
   return (
-    <section className="bg-slate-900 flex flex-col-reverse md:flex-row items-center h-auto md:h-8/10 py-8 md:py-0 gap-4 md:gap-0">
-      <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end lg:items-center">
+    <section className="hero bg-slate-900 flex flex-col-reverse md:flex-row items-center h-auto md:h-9/10 py-8 md:py-0 gap-4 md:gap-0 relative overflow-hidden">
+
+      {/* --- BACKGROUND EFFECTS --- */}
+
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute top-1/4 -left-32 hidden md:block h-[400px] w-[400px] rounded-full bg-blue-500/20 blur-3xl" />
+
+        <div className="absolute bottom-0 left-1/3 -translate-x-1/2 h-[300px] w-[400px] rounded-full bg-indigo-500/20 blur-3xl" />
+
+        <div className="absolute top-1/3 -right-40 h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-3xl" />
+
+        <Image
+          src={blobOutline}
+          alt="Blob outline"
+          className="pointer-events-none absolute top-6 left-4 hidden md:block w-80 opacity-60"
+        />
+
+        <Image
+          src={blobSolid}
+          alt="Blob solid"
+          className="pointer-events-none absolute -top-40 right-34 hidden md:block w-64 opacity-50"
+        />
+
+        <Image
+          src={blobSolid}
+          alt="Blob solid"
+          className="pointer-events-none absolute bottom-12 right-16 hidden md:block w-34 opacity-40"
+        />
+      </div>
+
+      <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end md:items-center z-10">
         <Image
           src={sonic}
-          className="w-full max-w-8/10 md:max-w-lg object-contain"
+          className="w-full max-w-8/10 md:max-w-md object-contain"
           quality={100}
           priority
           alt="Imagem do Sonic"
         />
       </div>
 
-      <div className="w-full md:w-3/5 px-6 md:pr-40 flex flex-col text-center md:text-end justify-center gap-4">
+      <div className="w-full md:w-3/5 px-6 md:pr-30 flex flex-col text-center md:text-end justify-center gap-4 z-10">
         <h2 className="text-2xl md:text-5xl text-sky-500 font-semibold">
           Crie Seus Próprios NFTs.
         </h2>
