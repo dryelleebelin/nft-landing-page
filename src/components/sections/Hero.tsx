@@ -40,10 +40,10 @@ export default function Hero() {
       <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end md:items-center z-10">
         <Image
           src={sonic}
-          className="w-full max-w-8/10 md:max-w-md object-contain"
+          alt="Imagem do Sonic"
           quality={100}
           priority
-          alt="Imagem do Sonic"
+          className="w-full max-w-8/10 md:max-w-md object-contain"
         />
       </div>
 
@@ -63,14 +63,14 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row justify-center md:justify-end gap-4 mt-6 items-center">
           <button
             type="button"
-            className="w-auto bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 rounded-full w-auto py-2 px-6 font-semibold flex items-center justify-center hover:text-slate-100 hover:from-sky-400 hover:via-blue-700 duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer"
+            className="w-auto bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 rounded-full py-2 px-6 font-semibold flex items-center justify-center hover:text-slate-100 hover:from-sky-400 hover:via-blue-700 transition-colors transition-transform duration-300 hover:scale-103 active:scale-95 shadow-md cursor-pointer"
           >
             Começar Agora
           </button>
 
           <button
             type="button"
-            className="w-auto relative inline-flex items-center justify-center rounded-full p-[2px] bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 transition-transform duration-300 hover:scale-105 active:scale-95 cursor-pointer"
+            className="w-auto relative inline-flex items-center justify-center rounded-full p-[2px] bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 transition-transform duration-300 hover:scale-103 active:scale-95 cursor-pointer"
           >
             <span className="rounded-full bg-slate-950 px-6 py-2 font-semibold hover:text-slate-100 duration-300">
               Saiba Mais

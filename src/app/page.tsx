@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import FeaturedNFTs from "@/components/sections/FeaturedNFTs";
+import DiscoverItems from "@/components/sections/DiscoverItems";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <FeaturedNFTs />
+      <DiscoverItems />
     </main>
   );
 }

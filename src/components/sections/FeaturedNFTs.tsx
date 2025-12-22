@@ -39,7 +39,7 @@ export default function FeaturedNFTs() {
         </div>
       </div>
 
-      <div className=" h-full w-full md:hidden px-6 pb-16 pt-10">
+      <div className=" h-full w-full md:hidden px-8 pb-16 pt-10">
         <div className="grid grid-cols-2 gap-4">
           {[img1, img2, img3, img4, img5, img6].map((img, i) => (
             <Image
