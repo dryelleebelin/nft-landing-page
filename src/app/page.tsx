@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
+import FeaturedNFTs from "@/components/sections/FeaturedNFTs";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Stats />
+      <FeaturedNFTs />
     </main>
   );
 }

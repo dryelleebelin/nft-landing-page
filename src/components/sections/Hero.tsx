@@ -7,7 +7,7 @@ import blobSolid from "../../assets/images/blob-solid.svg";
 
 export default function Hero() {
   return (
-    <section className="hero bg-slate-900 flex flex-col-reverse md:flex-row items-center h-auto md:h-9/10 py-8 md:py-0 gap-4 md:gap-0 relative overflow-hidden">
+    <section className="bg-slate-900 flex flex-col-reverse md:flex-row items-center min-h-screen pt-34 pb-12 md:pb-8 gap-4 md:gap-0 relative overflow-hidden">
 
       {/* --- BACKGROUND EFFECTS --- */}
 
@@ -21,19 +21,19 @@ export default function Hero() {
         <Image
           src={blobOutline}
           alt="Blob outline"
-          className="pointer-events-none absolute top-6 left-4 hidden md:block w-80 opacity-60"
+          className="pointer-events-none absolute top-26 left-4 hidden md:block w-80 opacity-60"
         />
 
         <Image
           src={blobSolid}
           alt="Blob solid"
-          className="pointer-events-none absolute -top-40 right-34 hidden md:block w-64 opacity-50"
+          className="pointer-events-none absolute -top-40 right-40 hidden md:block w-64 opacity-50"
         />
 
         <Image
           src={blobSolid}
           alt="Blob solid"
-          className="pointer-events-none absolute bottom-12 right-16 hidden md:block w-34 opacity-40"
+          className="pointer-events-none absolute bottom-6 right-16 hidden md:block w-34 opacity-40"
         />
       </div>
 
@@ -53,11 +53,11 @@ export default function Hero() {
         </h2>
 
         <h1 className="text-3xl md:text-6xl font-bold">
-          Descubra, Colecione e Venda Eles.
+          Crie e publique seus próprios NFTs.
         </h1>
 
         <p className="md:pl-20">
-          Nossa plataforma exclusiva de NFTs permite que criadores utilizem dispositivos abertos e seguros. O maior centro comercial avançado do mundo para colecionáveis cripto e tokens não fungíveis.
+          Uma plataforma digital dedicada à criação, descoberta e negociação de NFTs, oferecendo uma experiência moderna, intuitiva e segura para criadores e colecionadores. Explore coleções digitais, ativos exclusivos e novas possibilidades dentro do ecossistema Web3.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center md:justify-end gap-4 mt-6 items-center">

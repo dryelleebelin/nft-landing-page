@@ -4,11 +4,11 @@ import type { StatItem } from "@/types/stats";
 
 export default function Stats() {
   const stats: StatItem[] = [
-    { number: "5.5M", label: "Usuários Ativos" },
-    { number: "3.5M", label: "Nossas Artes" },
-    { number: "512", label: "Artistas Ativos" },
-    { number: "854", label: "Nossos Produtos" },
-    { number: "10M", label: "Total de NFTs" }
+    { number: "350K", label: "Usuários Ativos" },
+    { number: "120K", label: "Artes Criadas" },
+    { number: "1.2K", label: "Artistas Ativos" },
+    { number: "850", label: "Coleções" },
+    { number: "1.5M", label: "NFTs Mintados" }
   ]
 
   return (
