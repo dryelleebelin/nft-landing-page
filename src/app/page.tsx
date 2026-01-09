@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import FeaturedNFTs from "@/components/sections/FeaturedNFTs";
 import DiscoverItems from "@/components/sections/DiscoverItems";
+import Roadmap from "@/components/sections/Roadmap";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Stats />
       <FeaturedNFTs />
       <DiscoverItems />
-    </main>
+      <Roadmap />
+    </main> 
   );
 }

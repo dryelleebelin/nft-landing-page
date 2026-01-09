@@ -8,9 +8,9 @@ import nft2 from "../../assets/images/nft-art-09.jpeg";
 import nft3 from "../../assets/images/nft-art-10.jpeg";
 
 const items: NFTItem[] = [
-  { id: "1", title: "Abstract Form #01", image: nft1, price: 320, currency: "USD", likes: 124 },
-  { id: "2", title: "Digital Essence #02", image: nft2, price: 250, currency: "USD", likes: 89 },
-  { id: "3", title: "Neural Fragment #03", image: nft3, price: 410, currency: "USD", likes: 201 },
+  { id: "1", title: "Forma Abstrata #01", image: nft1, price: 320, currency: "USD", likes: 124 },
+  { id: "2", title: "Essência Digital #02", image: nft2, price: 250, currency: "USD", likes: 89 },
+  { id: "3", title: "Fragmento Neural #03", image: nft3, price: 410, currency: "USD", likes: 201 },
 ];
 
 export default function DiscoverItems() {
@@ -23,8 +23,8 @@ export default function DiscoverItems() {
       <p className="md:max-w-2xl text-center">
         Uma curadoria de NFTs digitais em destaque, reunindo peças exclusivas selecionadas por qualidade visual, originalidade e identidade criativa.
       </p>
-
-      <div className="w-full h-full flex flex-col md:flex-row md:justify-evenly gap-4 md:gap-0">
+      
+      <div className="w-full h-full flex flex-col md:flex-row md:justify-evenly gap-4 md:gap-0 pt-4">
         {items.map((item) => (
           <NFTCard key={item.id} {...item} />
         ))}
