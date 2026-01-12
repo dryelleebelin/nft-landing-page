@@ -11,12 +11,31 @@ export default function Home() {
   return (
     <main className="h-screen font-inter bg-slate-900 text-slate-300">
       <Header />
-      <Hero />
-      <Stats />
-      <FeaturedNFTs />
-      <DiscoverItems />
-      <Roadmap />
-      <SearchNFTs />
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="stats">
+        <Stats />
+      </section>
+
+      <section id="featured">
+        <FeaturedNFTs />
+      </section>
+
+      <section id="discover" className="scroll-mt-9">
+        <DiscoverItems />
+      </section>
+
+      <section id="roadmap" className="scroll-mt-28">
+        <Roadmap />
+      </section>
+
+      <section id="search">
+        <SearchNFTs />
+      </section>
+
       <Footer />
     </main>
   );

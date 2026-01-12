@@ -8,13 +8,19 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-white/10">
       <div className="px-6 md:px-30 py-16 grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20 text-center md:text-left">
-        
+
         <div className="md:col-span-2 space-y-4 flex flex-col items-center md:items-start">
-          <Image
-            src={logo}
-            alt="Logo do site"
-            className="w-16 md:w-12 object-contain"
-          />
+          <a
+            href="#home"
+            aria-label="Voltar para o início"
+          >
+            <Image
+              src={logo}
+              alt="Logo do site"
+              className="w-16 md:w-12 object-contain"
+            />
+          </a>
+
           <p className="text-sm leading-relaxed text-slate-400 max-w-md">
             Uma plataforma digital dedicada à criação, curadoria e comercialização de NFTs, conectando criadores e colecionadores em um ecossistema seguro e descentralizado.
           </p>

@@ -7,8 +7,8 @@ import type { SectionItem } from "@/types/sections";
 export default function Header() {
   const sections: SectionItem[] = [
     { id: "home", label: "Início" },
-    { id: "featured", label: "Destaques" },
-    { id: "discover", label: "Explorar" },
+    { id: "featured", label: "NFTs em Destaques" },
+    { id: "discover", label: "Coleção" },
     { id: "roadmap", label: "Roadmap" }
   ];
 
@@ -19,22 +19,27 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/10 py-6 px-6 md:px-30 flex justify-between items-center">
-      <Image
-        src={logo}
-        alt="Logo do site"
-        className="w-16 object-contain"
-      />
+      <a
+      href="#home"
+      aria-label="Voltar para o início"
+      >
+        <Image
+          src={logo}
+          alt="Logo do site"
+          className="w-16 object-contain"
+        />
+      </a>
 
       <nav className="hidden md:flex gap-8">
         {sections.map(({ id, label }) => {
           return (
-            <button
+            <a
               key={id}
               onClick={() => scrollToSection(id)}
-              className="cursor-pointer transition-colors duration-300 hover:text-sky-500"
+              className="transition-colors duration-300 hover:text-sky-500 cursor-pointer"
             >
               {label}
-            </button>
+            </a>
           )
         })}
       </nav>
