@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "@/assets/icons/logo.png";
 import type { SectionItem } from "@/types/sections";
@@ -18,10 +19,15 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/10 py-6 px-6 md:px-30 flex justify-between items-center">
+    <motion.header
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/10 py-6 px-6 md:px-30 flex justify-between items-center"
+    >
       <a
-      href="#home"
-      aria-label="Voltar para o início"
+        href="#home"
+        aria-label="Voltar para o início"
       >
         <Image
           src={logo}
@@ -51,6 +57,6 @@ export default function Header() {
       >
         Conectar Carteira
       </button>
-    </header>
+    </motion.header>
   )
 }

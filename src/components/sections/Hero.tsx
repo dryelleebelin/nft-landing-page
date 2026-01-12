@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { staggerContainer, fadeUp } from "@/lib/motion";
 import Image from "next/image";
 import sonic from "../../assets/images/sonic.png";
 import blobOutline from "../../assets/images/blob-outline.svg";
@@ -7,7 +9,12 @@ import blobSolid from "../../assets/images/blob-solid.svg";
 
 export default function Hero() {
   return (
-    <section className="bg-slate-900 flex flex-col-reverse md:flex-row items-center min-h-screen pt-34 pb-12 md:pb-8 gap-4 md:gap-0 relative overflow-hidden">
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+      className="bg-slate-900 flex flex-col-reverse md:flex-row items-center min-h-screen pt-34 pb-12 md:pb-8 gap-4 md:gap-0 relative overflow-hidden"
+    >
 
       {/* --- BACKGROUND EFFECTS --- */}
 
@@ -48,19 +55,25 @@ export default function Hero() {
       </div>
 
       <div className="w-full md:w-3/5 px-6 md:pr-30 flex flex-col text-center md:text-end justify-center gap-4 z-10">
-        <h2 className="text-2xl md:text-5xl text-sky-500 font-semibold">
+        <motion.h2 variants={fadeUp} className="text-2xl md:text-5xl text-sky-500 font-semibold">
           Crie Seus Próprios NFTs.
-        </h2>
+        </motion.h2>
 
-        <h1 className="text-3xl md:text-6xl font-bold">
+        <motion.h1
+          variants={fadeUp}
+          className="text-3xl md:text-6xl font-bold"
+        >
           Crie e publique seus próprios NFTs.
-        </h1>
+        </motion.h1>
 
-        <p className="md:pl-20">
+        <motion.p
+          variants={fadeUp}
+          className="md:pl-20"
+        >
           Uma plataforma digital dedicada à criação, descoberta e negociação de NFTs, oferecendo uma experiência moderna, intuitiva e segura para criadores e colecionadores. Explore coleções digitais, ativos exclusivos e novas possibilidades dentro do ecossistema Web3.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col md:flex-row justify-center md:justify-end gap-4 mt-6 items-center">
+        <motion.div variants={fadeUp} className="flex flex-col md:flex-row justify-center md:justify-end gap-4 mt-6 items-center">
           <button
             type="button"
             className="w-auto bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 rounded-full py-2 px-6 font-semibold flex items-center justify-center hover:text-slate-100 hover:from-sky-400 hover:via-blue-700 transition-colors transition-transform duration-300 hover:scale-103 active:scale-95 shadow-md cursor-pointer"
@@ -76,8 +89,8 @@ export default function Hero() {
               Saiba Mais
             </span>
           </button>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
