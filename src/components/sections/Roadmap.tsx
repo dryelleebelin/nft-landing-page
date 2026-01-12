@@ -1,39 +1,47 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { staggerContainer, fadeUp } from "@/lib/motion";
 import RoadmapStepCard from "../ui/RoadmapStepCard";
-import { Sparkles, Layers, FileText, Network, Rocket } from "lucide-react";
+import { LuSparkles, LuLayers, LuFileText, LuNetwork, LuRocket } from "react-icons/lu";
 
 export default function Roadmap() {
   const steps = [
     {
       title: "Criação do NFT",
       desc: "Desenvolvimento e definição do ativo digital.",
-      icon: Sparkles,
+      icon: LuSparkles,
     },
     {
       title: "Metadados & Assets",
       desc: "Estruturação de dados, imagens e propriedades.",
-      icon: Layers,
+      icon: LuLayers,
     },
     {
       title: "Contratos Inteligentes",
       desc: "Automação e regras de funcionamento do NFT.",
-      icon: FileText,
+      icon: LuFileText,
     },
     {
       title: "Infraestrutura Blockchain",
       desc: "Gestão de rede, tokens e integrações.",
-      icon: Network,
+      icon: LuNetwork,
     },
     {
       title: "Lançamento Programado",
       desc: "Publicação e disponibilidade no marketplace.",
-      icon: Rocket,
+      icon: LuRocket,
     },
   ];
 
   return (
-    <section className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 pt-14 pb-24 gap-6">
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 pt-14 pb-24 gap-6"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
         Roadmap do Ecossistema
       </h2>
@@ -43,9 +51,9 @@ export default function Roadmap() {
       </p>
 
       <div className="w-full">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+        <motion.div className="flex flex-col md:flex-row items-center justify-between gap-10">
           {steps.map(({ title, desc, icon }, index) => (
-            <div key={title} className="flex items-center gap-6">
+            <motion.div variants={fadeUp} key={title} className="flex items-center gap-6">
 
               <RoadmapStepCard
                 title={title}
@@ -56,10 +64,10 @@ export default function Roadmap() {
               {index < steps.length - 1 && (
                 <div className="hidden md:block w-14 h-px bg-gradient-to-r from-sky-500 to-indigo-600" />
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }

@@ -14,10 +14,11 @@ Landing page moderna para um marketplace de NFTs, desenvolvida com **Next.js**, 
 ## 🛠️ Tecnologias
 
 - **Next.js**
-- **React**
+- **ReactJS**
 - **TypeScript**
 - **Tailwind CSS**
 - **Motion**
+- **React Icons**
 
 ## 🎯 Objetivo do Projeto
 

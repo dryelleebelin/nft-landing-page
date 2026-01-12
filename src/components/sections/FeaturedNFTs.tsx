@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedStatNumber from "../ui/AnimatedStatNumber";
 import Image from "next/image";
 import img1 from "../../assets/images/nft-art-01.jpeg";
 import img2 from "../../assets/images/nft-art-02.jpeg";
@@ -7,6 +8,7 @@ import img3 from "../../assets/images/nft-art-03.jpeg";
 import img4 from "../../assets/images/nft-art-13.jpeg";
 import img5 from "../../assets/images/nft-art-08.jpeg";
 import img6 from "../../assets/images/nft-art-05.jpeg";
+
 
 export default function FeaturedNFTs() {
   return (
@@ -23,7 +25,10 @@ export default function FeaturedNFTs() {
         <div className="flex flex-col sm:flex-row gap-8 md:gap-10">
           <div className="flex flex-col gap-2 text-center md:text-left">
             <p className="text-sm font-semibold">Coleções em Destaque</p>
-            <h3 className="text-3xl font-bold">320+</h3>
+            <h3 className="text-3xl font-bold">
+              <AnimatedStatNumber value={320} />
+              <span>+</span>
+            </h3>
             <p>
               Coleções selecionadas com curadoria artística e alto valor criativo.
             </p>
@@ -31,7 +36,9 @@ export default function FeaturedNFTs() {
 
           <div className="flex flex-col gap-2 text-center md:text-left">
             <p className="text-sm font-semibold">NFTs Curados</p>
-            <h3 className="text-3xl font-bold">12.5K</h3>
+            <h3 className="text-3xl font-bold">
+              <AnimatedStatNumber value={12.5} suffix="K" />
+            </h3>
             <p>
               NFTs exclusivos escolhidos por qualidade, originalidade e raridade.
             </p>

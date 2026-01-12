@@ -1,4 +1,5 @@
 export type StatItem = {
-    number: string;
+    value: number;
+    suffix?: string;
     label: string;
 };

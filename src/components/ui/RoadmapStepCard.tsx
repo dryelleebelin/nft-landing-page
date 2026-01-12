@@ -1,11 +1,11 @@
 "use client";
 
-import { LucideIcon } from "lucide-react";
+import { IconType } from "react-icons";
 
 interface RoadmapStepCardProps {
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon: IconType;
 }
 
 export default function RoadmapStepCard({ title, description, icon: Icon }: RoadmapStepCardProps) {
