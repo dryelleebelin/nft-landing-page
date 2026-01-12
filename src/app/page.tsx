@@ -5,6 +5,7 @@ import FeaturedNFTs from "@/components/sections/FeaturedNFTs";
 import DiscoverItems from "@/components/sections/DiscoverItems";
 import Roadmap from "@/components/sections/Roadmap";
 import SearchNFTs from "@/components/sections/SearchNFTs";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <FeaturedNFTs />
       <DiscoverItems />
       <Roadmap />
-      <SearchNFTs/>
-    </main> 
+      <SearchNFTs />
+      <Footer />
+    </main>
   );
 }

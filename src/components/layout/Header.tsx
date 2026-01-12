@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../../public/favicon.png";
+import logo from "@/assets/icons/logo.png";
 import type { SectionItem } from "@/types/sections";
 
 export default function Header() {
@@ -21,8 +21,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/10 py-6 px-6 md:px-30 flex justify-between items-center">
       <Image
         src={logo}
-        className="w-20 object-contain"
         alt="Logo do site"
+        className="w-16 object-contain"
       />
 
       <nav className="hidden md:flex gap-8">

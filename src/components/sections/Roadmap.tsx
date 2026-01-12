@@ -1,34 +1,34 @@
 "use client";
 
 import RoadmapStepCard from "../ui/RoadmapStepCard";
-import { Sparkles, Layers, FileText, Network, Rocket } from "lucide-react";
+import { LuSparkles, LuLayers, LuFileText, LuNetwork, LuRocket } from "react-icons/lu";
 
 export default function Roadmap() {
   const steps = [
     {
       title: "Criação do NFT",
       desc: "Desenvolvimento e definição do ativo digital.",
-      icon: Sparkles,
+      icon: LuSparkles,
     },
     {
       title: "Metadados & Assets",
       desc: "Estruturação de dados, imagens e propriedades.",
-      icon: Layers,
+      icon: LuLayers,
     },
     {
       title: "Contratos Inteligentes",
       desc: "Automação e regras de funcionamento do NFT.",
-      icon: FileText,
+      icon: LuFileText,
     },
     {
       title: "Infraestrutura Blockchain",
       desc: "Gestão de rede, tokens e integrações.",
-      icon: Network,
+      icon: LuNetwork,
     },
     {
       title: "Lançamento Programado",
       desc: "Publicação e disponibilidade no marketplace.",
-      icon: Rocket,
+      icon: LuRocket,
     },
   ];
 
