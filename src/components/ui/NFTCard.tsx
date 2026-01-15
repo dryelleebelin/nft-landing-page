@@ -9,7 +9,7 @@ export default function NFTCard({ title, image, price, currency, likes }: NFTIte
   return (
     <motion.article
       variants={{
-        hidden: { opacity: 0, y: 40 },
+        hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 }
       }}
       className="md:w-1/4 rounded-lg bg-slate-800/40 p-4 flex flex-col gap-3 border border-blue-500/50 shadow-xl"

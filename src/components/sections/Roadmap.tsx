@@ -42,13 +42,13 @@ export default function Roadmap() {
       viewport={{ once: true, amount: 0.3 }}
       className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 pt-14 pb-24 gap-6"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center">
+      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center">
         Roadmap do Ecossistema
-      </h2>
+      </motion.h2>
 
-      <p className="md:max-w-2xl text-center mb-4">
+      <motion.p variants={fadeUp} className="md:max-w-2xl text-center mb-4">
         Uma visão estratégica das etapas que estruturam o ecossistema, da concepção dos NFTs à integração com contratos inteligentes e seu lançamento no marketplace.
-      </p>
+      </motion.p>
 
       <div className="w-full">
         <motion.div className="flex flex-col md:flex-row items-center justify-between gap-10">
