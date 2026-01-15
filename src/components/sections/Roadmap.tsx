@@ -9,27 +9,27 @@ export default function Roadmap() {
   const steps = [
     {
       title: "Criação do NFT",
-      desc: "Desenvolvimento e definição do ativo digital.",
+      desc: "Desenvolvimento e definição do ativo digital",
       icon: LuSparkles,
     },
     {
       title: "Metadados & Assets",
-      desc: "Estruturação de dados, imagens e propriedades.",
+      desc: "Estruturação de dados, imagens e propriedades",
       icon: LuLayers,
     },
     {
       title: "Contratos Inteligentes",
-      desc: "Automação e regras de funcionamento do NFT.",
+      desc: "Automação e regras de funcionamento do NFT",
       icon: LuFileText,
     },
     {
       title: "Infraestrutura Blockchain",
-      desc: "Gestão de rede, tokens e integrações.",
+      desc: "Gestão de rede, tokens e integrações",
       icon: LuNetwork,
     },
     {
       title: "Lançamento Programado",
-      desc: "Publicação e disponibilidade no marketplace.",
+      desc: "Publicação e disponibilidade no marketplace",
       icon: LuRocket,
     },
   ];
@@ -42,7 +42,7 @@ export default function Roadmap() {
       viewport={{ once: true, amount: 0.3 }}
       className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 pt-14 pb-24 gap-6"
     >
-      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center">
+      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center">
         Roadmap do Ecossistema
       </motion.h2>
 
@@ -62,7 +62,7 @@ export default function Roadmap() {
               />
 
               {index < steps.length - 1 && (
-                <div className="hidden md:block w-14 h-px bg-gradient-to-r from-sky-500 to-indigo-600" />
+                <div className="hidden md:block w-14 h-px bg-gradient-to-r from-blue-700 to-blue-500" />
               )}
             </motion.div>
           ))}

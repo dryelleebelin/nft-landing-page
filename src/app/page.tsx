@@ -24,11 +24,11 @@ export default function Home() {
         <FeaturedNFTs />
       </section>
 
-      <section id="discover" className="scroll-mt-9">
+      <section id="discover" className="scroll-mt-5">
         <DiscoverItems />
       </section>
 
-      <section id="roadmap" className="scroll-mt-28">
+      <section id="roadmap" className="scroll-mt-26">
         <Roadmap />
       </section>
 

@@ -12,7 +12,7 @@ export default function NFTCard({ title, image, price, currency, likes }: NFTIte
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0 }
       }}
-      className="md:w-1/4 rounded-lg bg-slate-800/40 p-4 flex flex-col gap-3 border border-blue-500/50 shadow-xl"
+      className="md:w-1/4 rounded-lg bg-blue-950/40 p-4 flex flex-col gap-3 border border-white/10 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:brightness-120"
     >
       <Image
         src={image}
@@ -34,7 +34,7 @@ export default function NFTCard({ title, image, price, currency, likes }: NFTIte
         </span>
       </div>
 
-      <button className="mt-auto flex items-center justify-end gap-2 text-sm font-semibold text-sky-400 hover:text-sky-300 transition cursor-pointer">
+      <button className="mt-auto flex items-center justify-end gap-2 text-sm font-semibold text-blue-400 hover:text-sky-300 transition cursor-pointer">
         Explorar NFT <LuArrowRight size={16} />
       </button>
     </motion.article>
