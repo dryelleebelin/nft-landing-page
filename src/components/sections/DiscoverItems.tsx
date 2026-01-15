@@ -24,13 +24,13 @@ export default function DiscoverItems() {
       viewport={{ once: true, amount: 0.3 }}
       className="bg-slate-900 min-h-screen flex flex-col items-center justify-center px-8 md:px-30 pt-4 pb-16 md:py-0 gap-6"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center">
+      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center">
         Descubra NFTs
-      </h2>
+      </motion.h2>
 
-      <p className="md:max-w-2xl text-center">
+      <motion.p variants={fadeUp} className="md:max-w-2xl text-center">
         Uma curadoria de NFTs digitais em destaque, reunindo peças exclusivas selecionadas por qualidade visual, originalidade e identidade criativa.
-      </p>
+      </motion.p>
 
       <motion.div className="w-full flex flex-col md:flex-row md:justify-evenly gap-4 pt-4">
         {items.map((item) => (

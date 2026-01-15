@@ -44,7 +44,12 @@ export default function Hero() {
         />
       </div>
 
-      <div className="w-full md:w-2/5 flex justify-center md:justify-end items-end md:items-center z-10">
+      <motion.div
+        initial={{ opacity: 0, y: 30, scale: 0.96 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="w-full md:w-2/5 flex justify-center md:justify-end items-end md:items-center z-10"
+      >
         <Image
           src={sonic}
           alt="Imagem do Sonic"
@@ -52,7 +57,7 @@ export default function Hero() {
           priority
           className="w-full max-w-8/10 md:max-w-md object-contain"
         />
-      </div>
+      </motion.div>
 
       <div className="w-full md:w-3/5 px-6 md:pr-30 flex flex-col text-center md:text-end justify-center gap-4 z-10">
         <motion.h2 variants={fadeUp} className="text-2xl md:text-5xl text-sky-500 font-semibold">
