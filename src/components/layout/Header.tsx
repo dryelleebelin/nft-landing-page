@@ -42,7 +42,7 @@ export default function Header() {
             <a
               key={id}
               onClick={() => scrollToSection(id)}
-              className="transition-colors duration-300 hover:text-sky-500 cursor-pointer"
+              className="transition-all duration-300 hover:text-white cursor-pointer"
             >
               {label}
             </a>
@@ -53,9 +53,9 @@ export default function Header() {
       <button
         type="button"
         onClick={() => { }}
-        className="bg-gradient-to-r from-sky-500 via-blue-800 to-slate-950 rounded-full py-2 px-4 text-sm font-semibold flex items-center justify-center hover:text-slate-100 hover:bg-blue-600 hover:from-sky-400 hover:via-blue-700 hover:to-slate-950 transition-colors transition-transform duration-300 hover:scale-103 active:scale-95 shadow-md cursor-pointer"
+        className="bg-gradient-to-l from-blue-700 to-blue-500 rounded-full py-2 px-4 text-sm font-semibold flex items-center justify-center hover:brightness-110 transition-all duration-300 shadow-md cursor-pointer"
       >
-        Conectar Carteira
+        Conectar Wallet
       </button>
     </motion.header>
   )

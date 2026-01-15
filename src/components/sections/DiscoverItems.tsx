@@ -22,9 +22,9 @@ export default function DiscoverItems() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      className="bg-slate-900 min-h-screen flex flex-col items-center justify-center px-8 md:px-30 pt-4 pb-16 md:py-0 gap-6"
+      className="bg-slate-900 min-h-screen flex flex-col items-center justify-center px-8 md:px-30 pt-4 pb-16 md:py-18 gap-6"
     >
-      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center">
+      <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center">
         Descubra NFTs
       </motion.h2>
 

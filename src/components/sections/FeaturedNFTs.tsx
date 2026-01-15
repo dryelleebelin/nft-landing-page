@@ -21,7 +21,7 @@ export default function FeaturedNFTs() {
         viewport={{ once: true, amount: 0.4 }}
         className="w-full md:w-1/2 flex flex-col items-start justify-center px-6 md:pl-30 md:pr-20 pt-14 md:pt-10 gap-8"
       >
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center md:text-left">
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
           Explore Nossas Principais Artes NFT
         </motion.h2>
 
@@ -68,7 +68,7 @@ export default function FeaturedNFTs() {
 
       <div className="hidden md:flex w-1/2 items-center pt-22 pr-20">
         <div className="relative w-full h-[520px]">
-          <motion.div animate={floating(9)} className="absolute top-16 left-28 w-64 z-20">
+          <motion.div animate={floating(8)} className="absolute top-16 left-28 w-64 z-20">
             <Image
               src={img1}
               alt="NFT art 1"

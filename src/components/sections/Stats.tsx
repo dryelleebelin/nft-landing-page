@@ -13,7 +13,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-blue-800 to-slate-950 py-10 px-6 md:px-16 lg:px-40">
+    <section className="bg-gradient-to-r from-blue-800 to-slate-950 py-10 px-6 md:px-16 lg:px-40 border-y border-white/10">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
         {stats.map(({ value, suffix, label }, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center gap-4 md:gap-0">
