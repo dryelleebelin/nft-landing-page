@@ -68,7 +68,7 @@ export default function Hero() {
           Crie e publique seus próprios NFTs
         </motion.h1>
 
-        <motion.p variants={fadeUp} className="md:pl-20">
+        <motion.p variants={fadeUp} className="mt-2 md:mt-0 md:pl-20">
           Uma plataforma digital dedicada à criação, descoberta e negociação de NFTs, oferecendo uma experiência moderna, intuitiva e segura para criadores e colecionadores. Explore coleções digitais, ativos exclusivos e novas possibilidades dentro do ecossistema Web3.
         </motion.p>
 
@@ -91,5 +91,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </motion.section>
-  )
+  );
 }

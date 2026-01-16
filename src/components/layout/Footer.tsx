@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
       <div className="px-6 md:px-30 border-t border-white/10">
-        <div className="py-10 md:py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-center md:text-left">
+        <div className="py-12 md:py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-center md:text-left">
           <span>
             © {new Date().getFullYear()} NFT Platform. Todos os direitos reservados.
           </span>

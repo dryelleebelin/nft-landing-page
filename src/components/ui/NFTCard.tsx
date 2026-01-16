@@ -34,7 +34,7 @@ export default function NFTCard({ title, image, price, currency, likes }: NFTIte
         </span>
       </div>
 
-      <button className="mt-auto flex items-center justify-end gap-2 text-sm font-semibold text-blue-400 hover:text-sky-300 transition cursor-pointer">
+      <button className="mt-auto flex items-center justify-end gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-all duration-300 cursor-pointer">
         Explorar NFT <LuArrowRight size={16} />
       </button>
     </motion.article>

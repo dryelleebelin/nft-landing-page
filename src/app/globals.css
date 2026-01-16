@@ -19,3 +19,18 @@ html {
   background-color: #cbd5e1;
   border-radius: 50px;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}

@@ -20,11 +20,11 @@ export default function Home() {
         <Stats />
       </section>
 
-      <section id="featured">
+      <section id="featured" className="scroll-mt-18 md:scroll-mt-0">
         <FeaturedNFTs />
       </section>
 
-      <section id="discover" className="scroll-mt-5">
+      <section id="discover" className="scroll-mt-26 md:scroll-mt-5">
         <DiscoverItems />
       </section>
 
