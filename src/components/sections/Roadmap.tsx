@@ -40,7 +40,7 @@ export default function Roadmap() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 pt-14 pb-24 gap-6"
+      className="bg-slate-900 flex flex-col items-center justify-center px-8 md:px-30 md:pt-14 md:pb-24 gap-6"
     >
       <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center">
         Roadmap do Ecossistema
@@ -69,5 +69,5 @@ export default function Roadmap() {
         </motion.div>
       </div>
     </motion.section>
-  )
+  );
 }

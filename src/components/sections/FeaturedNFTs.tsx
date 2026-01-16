@@ -19,7 +19,7 @@ export default function FeaturedNFTs() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
-        className="w-full md:w-1/2 flex flex-col items-start justify-center px-6 md:pl-30 md:pr-20 pt-14 md:pt-10 gap-8"
+        className="w-full md:w-1/2 flex flex-col items-start justify-center px-6 md:pl-30 md:pr-20 pt-12 md:pt-10 gap-8"
       >
         <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
           Explore Nossas Principais Artes NFT
